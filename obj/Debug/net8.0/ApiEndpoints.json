@@ -1,0 +1,53 @@
+[
+  {
+    "ContainingType": "APIPagamentoOnline.Presentation.Controllers.PagamentoController",
+    "Method": "ConfirmarPagamento",
+    "RelativePath": "api/Pagamento/ConfirmarPagamento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "valor",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIPagamentoOnline.Domain.Core.Models.ResponseModel\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPagamentoOnline.Presentation.Controllers.PagamentoController",
+    "Method": "ListarPagamentos",
+    "RelativePath": "api/Pagamento/ListarLogsPagamento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "APIPagamentoOnline.Domain.Core.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[APIPagamentoOnline.Domain.Core.Models.PagamentoDebitoEmContaModel, APIPagamentoOnline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
