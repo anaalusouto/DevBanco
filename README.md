@@ -22,27 +22,48 @@ Este documento descreve as práticas recomendadas para o compartilhamento de có
 4. **Teste Local**:
    - Certifique-se de que as alterações foram testadas localmente antes de compartilhar.
 
-## Fluxo de Trabalho Recomendado
 
-1. Crie uma branch baseada na branch principal:
-   ```bash
-   git checkout main
-   git pull origin main
-   git checkout -b feature/nome-da-funcionalidade
-   ```
+# Criando uma Branch sem Pull Request para a Main
 
-2. Desenvolva e commit suas alterações regularmente:
-   ```bash
-   git add .
-   git commit -m "feat(módulo): breve descrição da alteração"
-   ```
+Este guia ensina como criar uma nova branch em um repositório Git, sem a necessidade de enviar uma solicitação de pull request para a branch principal (`main`). A nova branch pode ser usada para desenvolvimento ou testes sem afetar diretamente a branch principal, mas ainda estará dentro do mesmo repositório.
 
-3. Sincronize sua branch com a principal:
-   ```bash
-   git fetch origin main
-   git merge main
-   ```
+## Passos para Criar uma Nova Branch
 
+### 1. Clone o Repositório
+
+Caso você ainda não tenha o repositório em sua máquina local, clone-o usando o seguinte comando:
+
+   '''bash
+   git clone https://github.com/anaalusouto/DevBanco.git
+
+### 2. Acesse o Diretório do Repositório
+Depois de clonar o repositório, entre no diretório do projeto:
+cd seu-repositorio
+
+
+### 3. Crie uma Nova Branch
+Para criar uma nova branch e alternar para ela imediatamente, use o comando:
+git checkout -b nome-da-sua-branch (Substitua nome-da-sua-branch pelo nome da sua nova branch.
+
+
+### 4. Realize Modificações e Commits
+Agora que você está na nova branch, pode começar a trabalhar nas modificações necessárias. Quando fizer alterações, adicione e faça commits regularmente:
+
+
+git add .
+git commit -m "Mensagem do commit"
+
+
+5. Evite Criar um Pull Request para a Main
+Ao criar a branch, ela estará disponível localmente e remotamente, mas sem a necessidade de abrir uma pull request para a main. Isso significa que você pode continuar o desenvolvimento sem fazer modificações diretas na branch principal. Você pode trabalhar em novas funcionalidades, correções ou testes de forma isolada.
+
+
+6. Envie Sua Branch para o Repositório Remoto
+Quando quiser compartilhar sua branch ou fazer backup das alterações, empurre a branch para o repositório remoto:
+
+bash
+Copiar código
+git push origin nome-da-sua-branch
 ## Boas Práticas
 
 - Evite commits grandes; prefira alterações pequenas e incrementais.
