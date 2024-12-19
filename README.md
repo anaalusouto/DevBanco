@@ -34,7 +34,7 @@ Este guia ensina como criar uma nova branch em um repositório Git, sem a necess
 Caso você ainda não tenha o repositório em sua máquina local, clone-o usando o seguinte comando:
 
    '''bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/anaalusouto/DevBanco.git
 
 ### 2. Acesse o Diretório do Repositório
 Depois de clonar o repositório, entre no diretório do projeto:
