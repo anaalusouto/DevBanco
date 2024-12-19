@@ -22,7 +22,7 @@ Este documento descreve as práticas recomendadas para o compartilhamento de có
 4. **Teste Local**:
    - Certifique-se de que as alterações foram testadas localmente antes de compartilhar.
 
-## Fluxo de Trabalho Recomendo
+## Fluxo de Trabalho Recomendado
 
 1. Crie uma branch baseada na branch principal:
    ```bash
