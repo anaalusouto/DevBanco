@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "WebAPICurrentAccount.Controllers.UserController",
+    "Method": "SearchUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

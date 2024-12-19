@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "z5gSxd7uHtq0m+bpuZdTZEcpi+TZuyWfpxQqAp9OmeA=",
+  "Source": "WebAPICurrentAccount",
+  "BasePath": "_content/WebAPICurrentAccount",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
