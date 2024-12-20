@@ -1,4 +1,3 @@
-
 # Pastas e arquivos gerados pelo Visual Studio
 .vs/
 *.suo
@@ -11,8 +10,7 @@ bin/
 obj/
 Debug/
 Release/
-/packages/
-/_ReSharper.Caches/
+
 # Arquivos de log
 *.log
 

@@ -1,0 +1,6 @@
+@SistemaCicloContabilDiario_HostAddress = http://localhost:5084
+
+GET {{SistemaCicloContabilDiario_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
