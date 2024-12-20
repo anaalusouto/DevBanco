@@ -1,0 +1,6 @@
+@SistemaCicloContabil_HostAddress = http://localhost:5286
+
+GET {{SistemaCicloContabil_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
