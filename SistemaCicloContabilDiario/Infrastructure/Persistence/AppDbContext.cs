@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SistemaCicloContabilDiario.Domain.Entities;
+using SistemaCicloContabilDiario.Domain.ValueObjects;
 using SistemaCicloContabilDiario.Models;
 
-namespace SistemaCicloContabilDiario.Data
+namespace SistemaCicloContabilDiario.Infrastructure.Persistence
 {
     //herda DbContext do EntityFrameworkCore
     //gerencia a conexão com o BD
@@ -18,6 +20,19 @@ namespace SistemaCicloContabilDiario.Data
         // DbSet<T> representa uma coleção de entidades tipo T (generica) 
         public DbSet<AutorModel> Autores { get; set; }
         public DbSet<LivroModel> Livros { get; set; }
+        public DbSet<Montante> montantes { get; set; }
+
+        public DbSet<TipoTransacao> TipoTransacao { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Mapear enum TipoTransacao como inteiro
+            modelBuilder.Entity<TipoTransacao>()
+                .Property(t => t.TipoTransacao)
+                .HasConversion<int>();
+
+            base.OnModelCreating(modelBuilder);
+        }
 
 
     }

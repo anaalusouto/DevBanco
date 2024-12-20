@@ -18,7 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Application\Repositories\" />
+    <Folder Include="Application\UseCases\" />
+    <Folder Include="Domain\Services\" />
+    <Folder Include="Inbound\Controllers\" />
+    <Folder Include="Inbound\DTOS\" />
+    <Folder Include="Inbound\Consumers\" />
+    <Folder Include="Outbound\" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SistemaCicloContabilDiario.Data;
+using SistemaCicloContabilDiario.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
