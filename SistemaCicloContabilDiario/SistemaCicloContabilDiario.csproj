@@ -24,6 +24,7 @@
     <Folder Include="Inbound\Controllers\" />
     <Folder Include="Inbound\DTOS\" />
     <Folder Include="Inbound\Consumers\" />
+    <Folder Include="Migrations\" />
     <Folder Include="Outbound\" />
   </ItemGroup>
 

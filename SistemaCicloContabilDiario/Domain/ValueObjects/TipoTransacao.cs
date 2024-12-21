@@ -1,9 +1,10 @@
 ﻿namespace SistemaCicloContabilDiario.Domain.ValueObjects
 {
-    public enum TipoTransacao
+    public class TipoTransacao
     {
-        Credito = 1,
-        Debito = 2
+        public int TipoTransacaoId { get; set; }
+        public string Nome { get; set; } 
     }
+
 
 }

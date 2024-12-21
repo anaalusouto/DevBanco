@@ -1,13 +1,10 @@
 ﻿namespace SistemaCicloContabilDiario.Domain.ValueObjects
 {
-    public enum CategoriaTransacao
+    public class CategoriaTransacao
     {
-        Pix,
-        Transferencia,
-        PagamentoParcelaEmprestimo,
-        ConcessaoEmprestimo,
-        PagamentoBoleto,
-
+        public int CategoriaTransacaoId { get; set; }
+        public string Nome { get; set; }
     }
+
 
 }

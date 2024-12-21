@@ -18,21 +18,11 @@ namespace SistemaCicloContabilDiario.Infrastructure.Persistence
 
         //DbSet permite read, inserts, uptades e dels
         // DbSet<T> representa uma coleção de entidades tipo T (generica) 
-        public DbSet<AutorModel> Autores { get; set; }
-        public DbSet<LivroModel> Livros { get; set; }
-        public DbSet<Montante> montantes { get; set; }
-
-        public DbSet<TipoTransacao> TipoTransacao { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // Mapear enum TipoTransacao como inteiro
-            modelBuilder.Entity<TipoTransacao>()
-                .Property(t => t.TipoTransacao)
-                .HasConversion<int>();
-
-            base.OnModelCreating(modelBuilder);
-        }
+ 
+        public DbSet<Transacao> Transacoes { get; set; }
+        public DbSet<TipoTransacao> TiposTransacao { get; set; }
+        public DbSet<CategoriaTransacao> CategoriasTransacao { get; set; }
+        public DbSet<Montante> Montantes { get; set; }
 
 
     }
